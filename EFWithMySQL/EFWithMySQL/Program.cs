@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ namespace EFWithMySQL
             Customer customer = new Customer {FirstName = "Jalpesh", 
                                               LastName = "Vadgama",
                                               City = "Ahmedabad"};
+
 
             using (CustomerDataConext customerDataConext = new CustomerDataConext())
             {

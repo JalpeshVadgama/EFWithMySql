@@ -2,6 +2,7 @@
 
 namespace EFWithMySQL
 {
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))] 
     public class CustomerDataConext : DbContext
     {
         public CustomerDataConext(): base("DefaultConnectionString")
